@@ -1,0 +1,16 @@
+$primary-color: #ff6060;
+$secondary-color: #ffffff;
+$tertiary-color: #000000;
+$bg-gallery: #f6f6f6;
+
+* {
+    margin: 0;
+    text-decoration: none;
+}
+
+#root {
+    margin: auto;
+    width: 100%;
+    min-width: 375px;
+    max-width: 1440px;
+}
