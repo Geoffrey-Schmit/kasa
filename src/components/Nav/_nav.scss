@@ -1,0 +1,12 @@
+.nav-header {
+    display: flex;
+    gap: 20px;
+    &__link-home,
+    &__link-about {
+        color: $primary-color;
+    }
+    &__link-home:hover,
+    &__link-about:hover {
+        text-decoration: underline;
+    }
+}

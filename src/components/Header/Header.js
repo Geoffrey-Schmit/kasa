@@ -1,5 +1,4 @@
-import '../styles/css/header.css';
-import { Link } from 'react-router-dom';
+import Nav from '../Nav/Nav';
 
 function Header() {
     return (
@@ -23,10 +22,7 @@ function Header() {
                     fill="#FF6060"
                 />
             </svg>
-            <nav className="nav__link">
-                <Link to="/">Accueil</Link>
-                <Link to="/a-propos">A Propos</Link>
-            </nav>
+            <Nav />
         </header>
     );
 }

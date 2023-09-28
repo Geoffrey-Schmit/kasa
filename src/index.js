@@ -1,8 +1,8 @@
 import React from 'react';
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Header from './components/Header.js';
-import '../src/styles/css/index.css';
+import { BrowserRouter as Router } from 'react-router-dom';
+import App from './App';
+import '../src/styles/index.scss';
 
 const root = document.getElementById('root');
 const reactRoot = createRoot(root);
@@ -10,9 +10,7 @@ const reactRoot = createRoot(root);
 reactRoot.render(
     <React.StrictMode>
         <Router>
-            <Routes>
-                <Route path="/" element={<Header />} />
-            </Routes>
+            <App />
         </Router>
     </React.StrictMode>
 );

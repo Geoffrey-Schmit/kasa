@@ -18,13 +18,39 @@ header {
   justify-content: space-between;
   align-items: center;
 }
-header nav {
+
+.nav-header {
   display: flex;
   gap: 20px;
 }
-header nav a {
+.nav-header__link-home, .nav-header__link-about {
   color: #ff6060;
 }
-header nav a:hover {
+.nav-header__link-home:hover, .nav-header__link-about:hover {
   text-decoration: underline;
+}
+
+.test {
+  background-color: black;
+}
+
+.banner-container {
+  position: relative;
+  max-height: 225px;
+}
+.banner-container__img {
+  width: 100%;
+  height: 225px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  overflow: hidden;
+  border-radius: 25px;
+}
+.banner-container__text {
+  position: absolute;
+  font-size: 48px;
+  font-weight: 500;
+  top: 40%;
+  left: 400px;
+  color: #ffffff;
 }/*# sourceMappingURL=index.css.map */

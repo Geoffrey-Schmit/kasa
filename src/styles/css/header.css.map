@@ -1,1 +1,10 @@
-{"version":3,"sources":["../header.scss","header.css"],"names":[],"mappings":"AAAA;EACI,aAAA;ACCJ","file":"header.css"}
+{
+    "version": 3,
+    "sources": [
+        "../_header.scss",
+        "header.css"
+    ],
+    "names": [],
+    "mappings": "AAAA;EACI,aAAA;ACCJ",
+    "file": "header.css"
+}
