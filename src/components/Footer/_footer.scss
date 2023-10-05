@@ -1,3 +1,14 @@
-.test {
+@import '../../styles/settings';
+
+.footer-container {
     background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+    justify-content: center;
+    height: 210px;
+    &__text {
+        color: $secondary-color;
+    }
 }
