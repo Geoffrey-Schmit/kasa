@@ -1,0 +1,30 @@
+.errorContainer {
+    color: $primary-color;
+    margin: 40px 22px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 150px;
+}
+
+.errorNumber {
+    font-size: 288px;
+    font-weight: 700;
+    line-height: 410px;
+}
+
+.errorText {
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 50px;
+}
+
+.errorLinkHome {
+    max-height: 26px;
+    color: $primary-color;
+    font-size: 18px;
+    font-weight: 500;
+    &:hover {
+        text-decoration: underline;
+    }
+}

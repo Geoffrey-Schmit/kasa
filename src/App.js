@@ -4,8 +4,8 @@ import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Home from './components/pages/Home/Home';
 import About from './components/pages/About/About';
-// import FicheLogement from './components/pages/FicheLogement/FicheLogement';
-// import Error from './components/pages/Error/Error';
+import FicheLogement from './components/pages/FicheLogement/FicheLogement';
+import Error from './components/pages/Error/Error';
 
 function App() {
     return (
@@ -15,8 +15,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
-                    {/* <Route path="/logement/:id" element={<FicheLogement />} />
-                    <Route path="*" element={<Error />} /> */}
+                    <Route path="/logement/:id" element={<FicheLogement />} />
+                    <Route path="*" element={<Error />} />
                 </Routes>
             </main>
             <Footer />
