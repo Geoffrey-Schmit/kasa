@@ -4,6 +4,10 @@
     width: 196px;
     height: 36px;
     margin-top: 24px;
+    @media screen and (max-width: 375px) {
+        width: 98px;
+        height: 18px;
+    }
 }
 
 .rate-container {
@@ -14,4 +18,8 @@
 .star {
     width: 30px;
     height: 30px;
+    @media screen and (max-width: 375px) {
+        width: 15px;
+        height: 15px;
+    }
 }

@@ -13,6 +13,7 @@ $banner-background: $background-color url(../assets/images/IMGbanner.png);
     margin: 0;
     font-family: 'Montserrat', sans-serif;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 #root {

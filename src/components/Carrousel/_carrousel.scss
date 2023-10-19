@@ -5,6 +5,9 @@
     height: 415px;
     margin: 2% 0;
     overflow: hidden;
+    @media screen and (max-width: 375px) {
+        height: 255px;
+    }
 }
 
 .slider {
@@ -17,7 +20,10 @@
     bottom: 0%;
     border-radius: 25px;
     opacity: 0;
-    transition: opacity ease-in-out 0.6s; //petit effet d'apparition progressive de l'image dans le slide
+    transition: opacity ease-in-out 0.6s;
+    @media screen and (max-width: 375px) {
+        border-radius: 10px;
+    }
 
     & img {
         width: 100%;
@@ -30,6 +36,9 @@
         bottom: 0%;
         mix-blend-mode: normal;
         border-radius: 25px;
+        @media screen and (max-width: 375px) {
+            border-radius: 10px;
+        }
     }
 
     &__number {
@@ -40,6 +49,9 @@
         color: $secondary-color;
         left: 48%;
         top: 86%;
+        @media screen and (max-width: 375px) {
+            display: none;
+        }
     }
 }
 

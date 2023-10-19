@@ -1,6 +1,9 @@
 .collapse {
     width: 100%;
-    margin: 20px 0;
+    margin: 31px auto 0;
+    @media screen and (max-width: 375px) {
+        margin: 20px 0;
+    }
 
     &__visible {
         background: $primary-color;
@@ -9,10 +12,13 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: 30px;
+        height: 47px;
         padding: 7px 0;
         border-radius: 5px;
         width: 100%;
+        @media screen and (max-width: 375px) {
+            height: 30px;
+        }
 
         h2 {
             font-size: 24px;
@@ -21,6 +27,12 @@
             line-height: 142.6%;
             padding-left: 10px;
             color: $secondary-color;
+            @media screen and (max-width: 375px) {
+                font-size: 13px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 142.6%;
+            }
         }
     }
 
@@ -39,6 +51,12 @@
             font-style: normal;
             font-weight: 400;
             line-height: 142.6%;
+            @media screen and (max-width: 375px) {
+                font-size: 12px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 142.6%;
+            }
         }
     }
 }
@@ -63,13 +81,16 @@
 }
 
 .about-style {
-    width: 100%;
+    width: 87.5%;
     max-width: 1023px;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
     gap: 20px;
     margin: auto;
+    @media screen and (max-width: 375px) {
+        width: 100%;
+    }
 }
 
 .collapse-fiche-container {
@@ -78,6 +99,10 @@
     justify-content: center;
     width: 100%;
     gap: 20px;
+    @media screen and (max-width: 375px) {
+        flex-direction: column;
+        gap: 0;
+    }
 }
 
 .equipList {

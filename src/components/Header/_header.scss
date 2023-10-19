@@ -5,4 +5,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @media screen and (max-width: 375px) {
+        margin: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
 }

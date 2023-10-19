@@ -3,13 +3,17 @@
 .card-logement {
     position: relative;
     display: flex;
-    width: 335px;
-    height: 255px;
-    min-width: 335px;
-    border-radius: 10px;
+    width: 340px;
+    height: 340px;
+    min-width: 340px;
+    border-radius: 25px;
     &:hover,
     &:focus {
         box-shadow: rgba(255, 96, 96, 0.9) 0 0 22px 6px;
+    }
+    @media screen and (max-width: 375px) {
+        width: 335px;
+        height: 255px;
     }
     &__layer {
         display: flex;
@@ -48,12 +52,16 @@ img {
     display: flex;
     justify-content: center;
     width: 100%;
-    gap: 20px;
-    border-radius: 10px;
+    gap: 50px;
+    border-radius: 25px;
     margin: 22px 0;
     padding: 22px 0;
     flex-wrap: wrap;
     background-color: $bg-gallery;
+    @media screen and (max-width: 375px) {
+        gap: 20px;
+        border-radius: 10px;
+    }
 }
 
 .link_card_logement {

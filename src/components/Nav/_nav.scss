@@ -1,9 +1,24 @@
 .nav-header {
     display: flex;
+    align-items: center;
+    justify-content: flex-end;
     gap: 20px;
+    text-transform: none;
     &__link-home,
     &__link-about {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        text-align: right;
+        line-height: 142.6%;
         color: $primary-color;
+        @media screen and (max-width: 375px) {
+            font-size: 12px;
+            font-style: normal;
+            font-weight: 500;
+            text-align: right;
+            line-height: 142.6%;
+        }
     }
     &__link-home:hover,
     &__link-about:hover {
