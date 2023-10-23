@@ -44,5 +44,20 @@
             font-weight: 500;
             line-height: 100%;
         }
+
+        @media screen and (max-width: 834px) {
+            top: 28.04%;
+            left: 5.6%;
+            right: 32.53%;
+            bottom: 80.05%;
+            font-size: 36px;
+        }
+        @media screen and (max-width: 594px) {
+            top: 28.04%;
+            left: 5.6%;
+            right: 32.53%;
+            bottom: 80.05%;
+            font-size: 24px;
+        }
     }
 }

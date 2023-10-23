@@ -12,15 +12,17 @@ function FicheLogement() {
     const navigate = useNavigate();
 
     const [pickedAppart, setPickedAppart] = useState();
+
+    const getData = async () => {
+        const res = await axios.get('/data/bdd.json');
+        const picked = res.data.find(({ id }) => id === params.id);
+        setPickedAppart(picked);
+
+        if (picked === undefined) {
+            navigate('/404', { state: { message: "Can't get data" } });
+        }
+    };
     useEffect(() => {
-        const getData = async () => {
-            const res = await axios.get('/data/bdd.json');
-            const picked = res.data.find(({ id }) => id === params.id);
-            res.data.map(() => setPickedAppart(picked));
-            if (picked === undefined) {
-                navigate('/404', { state: { message: "Can't get data" } });
-            }
-        };
         getData();
         // eslint-disable-next-line
     }, []);
